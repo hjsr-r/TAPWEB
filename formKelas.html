@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Pendaftaran Kelas Fotografi</title>
+    <link rel="stylesheet" href="stylesFormKelas.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Form Pendaftaran Kelas Fotografi</h1>
+      </div>
+    </header>
+    <section id="registration-form">
+      <div class="container">
+        <form action="sendKelas.php" method="POST">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Telepon:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="class">Pilih Kelas:</label>
+          <select id="class" name="class" required>
+            <option value="Paket Dasar">Paket Dasar</option>
+            <option value="Paket Lanjutan">Paket Lanjutan</option>
+            <option value="Paket Profesional">Paket Profesional</option>
+          </select>
+
+          <label for="start_date">Tanggal Mulai Kelas:</label>
+          <input type="date" id="start_date" name="start_date" required />
+
+          <label for="comments">Komentar:</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+          <br /><br />
+          <button type="submit">Daftar</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Rental Kamera Mika. All rights reserved.</p>
+        <p>Alamat: Jl. Potronanggan No. 123, Yogyakarta</p>
+        <div class="social-icons">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
